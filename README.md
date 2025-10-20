@@ -10,9 +10,11 @@ This model of simulation becomes inefficient when simulating large systems with 
 
 ### qipy.sparse
 The sparse simulation consists of term manipulation. Internally, we treat the density matrix entries as a list of terms with coefficients, just like the mathematical definition of a density matrix:
+
 $$ \rho = \sum_i p_i \ket{\psi_i} \bra{\psi_i}. $$
 
 Instead of directly multiplying operators with the density matrix, we use the fact that they're linear, which means they can act on each term separately:
+
 $$ U \rho U^\dagger = \sum_i p_i U\ket{\psi_i} \bra{\psi_i}U^\dagger $$
 
 This type of simulation, as the name suggests, is preferred for sparse systems—systems with a small number of entries.
