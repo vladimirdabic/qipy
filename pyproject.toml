@@ -10,9 +10,9 @@ authors = [
 ]
 description = "Quantum circuit simulator with sparse and dense implementations"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.11"
 dependencies = [
-    "numpy>=1.20.0",
+    "numpy>=2.2.4",
 ]
 keywords = ["quantum", "quantum computing", "simulation", "quantum circuits", "quantum information"]
 classifiers = [
